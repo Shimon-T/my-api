@@ -16,7 +16,7 @@ let guns = [
         type: "ハンドガン",
         ammo: 25,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/BP6nygT.jpg"
+        imageURL: "https://i.imgur.com/dAd5rDQ.jpg"
     },
     {
         id: uuidv4(),
@@ -24,7 +24,7 @@ let guns = [
         type: "ハンドガン",
         ammo: 31,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/pkMH4Kw.jpg"
+        imageURL: "https://i.imgur.com/lfGqFhF.jpg"
     },
     {
         id: uuidv4(),
@@ -32,7 +32,7 @@ let guns = [
         type: "ハンドガン",
         ammo: 26,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/wdfEG9O.jpg"
+        imageURL: "https://i.imgur.com/WIQ9UuH.jpg"
     },
     {
         id: uuidv4(),
@@ -40,7 +40,7 @@ let guns = [
         type: "ハンドガン",
         ammo: 27,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/nGeBGgN.jpg"
+        imageURL: "https://i.imgur.com/hb9qNBZ.jpg"
     },
     {
         id: uuidv4(),
@@ -48,7 +48,7 @@ let guns = [
         type: "アサルトライフル",
         ammo: 68,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/f6oAtpv.jpg"
+        imageURL: "https://i.imgur.com/ghvOv1N.jpg"
     },
     {
         id: uuidv4(),
@@ -56,7 +56,7 @@ let guns = [
         type: "アサルトライフル",
         ammo: 82,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/5BGBNDW.jpg"
+        imageURL: "https://i.imgur.com/vYqzodD.jpg"
     },
     {
         id: uuidv4(),
@@ -64,7 +64,7 @@ let guns = [
         type: "サブマシンガン",
         ammo: 68,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/6boV1lr.jpg"
+        imageURL: "https://i.imgur.com/etjvLfK.jpg"
     },
     {
         id: uuidv4(),
@@ -72,7 +72,7 @@ let guns = [
         type: "サブマシンガン",
         ammo: 50,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/k0slZoJ.jpg"
+        imageURL: "https://i.imgur.com/nLNN5EU.jpg"
     },
     {
         id: uuidv4(),
@@ -80,7 +80,7 @@ let guns = [
         type: "アサルトライフル",
         ammo: 50,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/pMN1hXW.jpg"
+        imageURL: "https://i.imgur.com/jVliDWu.jpg"
     },
     {
         id: uuidv4(),
@@ -88,7 +88,7 @@ let guns = [
         type: "アサルトライフル",
         ammo: 80,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/7ZSSYVX.jpg"
+        imageURL: "https://i.imgur.com/UnxYVCj.jpg"
     }
 ];
 
