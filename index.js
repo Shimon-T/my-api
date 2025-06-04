@@ -12,19 +12,43 @@ app.use(express.json());
 let guns = [
     {
         id: uuidv4(),
-        name: "グロック17C",
+        name: "グロック17 3rdジェネレーション",
         type: "ハンドガン",
         ammo: 25,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/dAd5rDQ.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121052205.jpg"
     },
     {
         id: uuidv4(),
-        name: "ハイキャパ5.1",
+        name: "ハイキャパ5.1 ガバメントモデル",
         type: "ハンドガン",
         ammo: 31,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/lfGqFhF.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121053124.jpg"
+    },
+    {
+        id: uuidv4(),
+        name: "ハイキャパ5.1 ゴールドマッチ",
+        type: "ハンドガン",
+        ammo: 31,
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121022820.jpg"
+    },
+    {
+        id: uuidv4(),
+        name: "ハイキャパ5.1R ブラックモデル",
+        type: "ハンドガン",
+        ammo: 31,
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121060404.jpg"
+    },
+    {
+        id: uuidv4(),
+        name: "ハイキャパ5.1 ステンレスモデル",
+        type: "ハンドガン",
+        ammo: 31,
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub5_210121050230.jpg"
     },
     {
         id: uuidv4(),
@@ -32,7 +56,7 @@ let guns = [
         type: "ハンドガン",
         ammo: 26,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/WIQ9UuH.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121055112.jpg"
     },
     {
         id: uuidv4(),
@@ -40,7 +64,7 @@ let guns = [
         type: "ハンドガン",
         ammo: 27,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/hb9qNBZ.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub5_210121053630.jpg"
     },
     {
         id: uuidv4(),
@@ -48,7 +72,7 @@ let guns = [
         type: "アサルトライフル",
         ammo: 68,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/ghvOv1N.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119065711.jpg"
     },
     {
         id: uuidv4(),
@@ -56,7 +80,7 @@ let guns = [
         type: "アサルトライフル",
         ammo: 82,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/vYqzodD.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119012502.jpg"
     },
     {
         id: uuidv4(),
@@ -64,7 +88,7 @@ let guns = [
         type: "サブマシンガン",
         ammo: 68,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/etjvLfK.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119065200.jpg"
     },
     {
         id: uuidv4(),
@@ -72,7 +96,7 @@ let guns = [
         type: "サブマシンガン",
         ammo: 50,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/nLNN5EU.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119075139.jpg"
     },
     {
         id: uuidv4(),
@@ -80,7 +104,7 @@ let guns = [
         type: "アサルトライフル",
         ammo: 50,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/jVliDWu.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119072429.jpg"
     },
     {
         id: uuidv4(),
@@ -88,7 +112,7 @@ let guns = [
         type: "アサルトライフル",
         ammo: 80,
         maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/UnxYVCj.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119075819.jpg"
     }
 ];
 
