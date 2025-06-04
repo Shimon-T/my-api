@@ -16,7 +16,7 @@ let guns = [
         type: "ハンドガン",
         ammo: 25,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/products/01/g17c/img/g17c_main.jpg"
+        imageURL: "https://i.imgur.com/BP6nygT.jpg"
     },
     {
         id: uuidv4(),
@@ -24,7 +24,7 @@ let guns = [
         type: "ハンドガン",
         ammo: 31,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/products/01/hi_capa51/img/hi_capa51_main.jpg"
+        imageURL: "https://i.imgur.com/pkMH4Kw.jpg"
     },
     {
         id: uuidv4(),
@@ -32,7 +32,7 @@ let guns = [
         type: "ハンドガン",
         ammo: 26,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/products/01/m92f/img/m92f_main.jpg"
+        imageURL: "https://i.imgur.com/wdfEG9O.jpg"
     },
     {
         id: uuidv4(),
@@ -40,7 +40,7 @@ let guns = [
         type: "ハンドガン",
         ammo: 27,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/products/01/desert/img/desert_main.jpg"
+        imageURL: "https://i.imgur.com/nGeBGgN.jpg"
     },
     {
         id: uuidv4(),
@@ -48,7 +48,7 @@ let guns = [
         type: "アサルトライフル",
         ammo: 68,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/products/02/m4a1/img/m4a1_main.jpg"
+        imageURL: "https://i.imgur.com/f6oAtpv.jpg"
     },
     {
         id: uuidv4(),
@@ -56,7 +56,7 @@ let guns = [
         type: "アサルトライフル",
         ammo: 82,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/products/02/hk416dc/img/hk416dc_main.jpg"
+        imageURL: "https://i.imgur.com/5BGBNDW.jpg"
     },
     {
         id: uuidv4(),
@@ -64,7 +64,7 @@ let guns = [
         type: "サブマシンガン",
         ammo: 68,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/products/02/p90/img/p90_main.jpg"
+        imageURL: "https://i.imgur.com/6boV1lr.jpg"
     },
     {
         id: uuidv4(),
@@ -72,7 +72,7 @@ let guns = [
         type: "サブマシンガン",
         ammo: 50,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/products/02/mp5sd6/img/mp5sd6_main.jpg"
+        imageURL: "https://i.imgur.com/k0slZoJ.jpg"
     },
     {
         id: uuidv4(),
@@ -80,7 +80,7 @@ let guns = [
         type: "アサルトライフル",
         ammo: 50,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/products/02/g36c/img/g36c_main.jpg"
+        imageURL: "https://i.imgur.com/pMN1hXW.jpg"
     },
     {
         id: uuidv4(),
@@ -88,7 +88,7 @@ let guns = [
         type: "アサルトライフル",
         ammo: 80,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/products/02/aug/img/aug_main.jpg"
+        imageURL: "https://i.imgur.com/7ZSSYVX.jpg"
     }
 ];
 
