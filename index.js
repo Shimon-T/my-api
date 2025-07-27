@@ -172,6 +172,43 @@ let guns = [
         imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_main_210121034429.jpg",
         ageRating: 18
     }
+    ,
+    {
+        id: uuidv4(),
+        name: "M870 ブリーチャー",
+        type: "ショットガン",
+        ammo: 30,
+        maker: "東京マルイ",
+        imageURL: "https://i.imgur.com/GaC46Eb.jpg",
+        ageRating: 18
+    },
+    {
+        id: uuidv4(),
+        name: "VSR-10 プロスナイパーバージョン",
+        type: "ライフル",
+        ammo: 30,
+        maker: "東京マルイ",
+        imageURL: "https://i.imgur.com/yADQztF.jpg",
+        ageRating: 18
+    },
+    {
+        id: uuidv4(),
+        name: "グレネード160ショット",
+        type: "グレネード",
+        ammo: 1,
+        maker: "東京マルイ",
+        imageURL: "https://i.imgur.com/N9geMWZ.jpg",
+        ageRating: 18
+    },
+    {
+        id: uuidv4(),
+        name: "プロテクティブベスト",
+        type: "その他",
+        ammo: 0,
+        maker: "東京マルイ",
+        imageURL: "https://i.imgur.com/8m7RMzN.jpg",
+        ageRating: 0
+    }
 ];
 
 // Get all guns
@@ -179,7 +216,7 @@ app.get('/guns', (req, res) => {
     res.json(guns);
 });
 
-// Search guns by keyword
+// Search guns by keywor
 app.get('/guns/search', (req, res) => {
     const query = req.query.q?.toLowerCase();
     if (!query) {
