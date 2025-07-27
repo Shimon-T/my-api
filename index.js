@@ -16,7 +16,8 @@ let guns = [
         type: "ハンドガン",
         ammo: 25,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121052205.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121052205.jpg",
+        ageRating: 18
     },
     {
         id: uuidv4(),
@@ -24,7 +25,8 @@ let guns = [
         type: "ハンドガン",
         ammo: 31,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121053124.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121053124.jpg",
+        ageRating: 18
     },
     {
         id: uuidv4(),
@@ -32,7 +34,8 @@ let guns = [
         type: "ハンドガン",
         ammo: 31,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121022820.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121022820.jpg",
+        ageRating: 18
     },
     {
         id: uuidv4(),
@@ -40,7 +43,8 @@ let guns = [
         type: "ハンドガン",
         ammo: 31,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121060404.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121060404.jpg",
+        ageRating: 10
     },
     {
         id: uuidv4(),
@@ -48,7 +52,8 @@ let guns = [
         type: "ハンドガン",
         ammo: 31,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub5_210121050230.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub5_210121050230.jpg",
+        ageRating: 18
     },
     {
         id: uuidv4(),
@@ -56,7 +61,8 @@ let guns = [
         type: "ハンドガン",
         ammo: 26,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121055112.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121055112.jpg",
+        ageRating: 18
     },
     {
         id: uuidv4(),
@@ -64,7 +70,8 @@ let guns = [
         type: "ハンドガン",
         ammo: 27,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub5_210121053630.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub5_210121053630.jpg",
+        ageRating: 18
     },
     {
         id: uuidv4(),
@@ -72,7 +79,8 @@ let guns = [
         type: "アサルトライフル",
         ammo: 68,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119065711.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119065711.jpg",
+        ageRating: 18
     },
     {
         id: uuidv4(),
@@ -80,7 +88,8 @@ let guns = [
         type: "アサルトライフル",
         ammo: 82,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119012502.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119012502.jpg",
+        ageRating: 18
     },
     {
         id: uuidv4(),
@@ -88,7 +97,8 @@ let guns = [
         type: "サブマシンガン",
         ammo: 68,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119065200.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119065200.jpg",
+        ageRating: 18
     },
     {
         id: uuidv4(),
@@ -96,7 +106,8 @@ let guns = [
         type: "サブマシンガン",
         ammo: 50,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119075139.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119075139.jpg",
+        ageRating: 18
     },
     {
         id: uuidv4(),
@@ -104,7 +115,8 @@ let guns = [
         type: "アサルトライフル",
         ammo: 50,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119072429.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119072429.jpg",
+        ageRating: 18
     },
     {
         id: uuidv4(),
@@ -112,7 +124,53 @@ let guns = [
         type: "アサルトライフル",
         ammo: 80,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119075819.jpg"
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119075819.jpg",
+        ageRating: 18
+    },
+    {
+        id: uuidv4(),
+        name: "M870 タクティカル",
+        type: "ショットガン",
+        ammo: 30,
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210120075151.jpg",
+        ageRating: 18
+    },
+    {
+        id: uuidv4(),
+        name: "サイガ-12K",
+        type: "ショットガン",
+        ammo: 45,
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_main_230516043332.jpg",
+        ageRating: 18
+    },
+    {
+        id: uuidv4(),
+        name: "VSR-10 Gスペック",
+        type: "ライフル",
+        ammo: 30,
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_main_210120043830.jpg",
+        ageRating: 18
+    },
+    {
+        id: uuidv4(),
+        name: "M40A5",
+        type: "ライフル",
+        ammo: 35,
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_main_210119020828.jpg",
+        ageRating: 18
+    },
+    {
+        id: uuidv4(),
+        name: "M320A1",
+        type: "グレネード",
+        ammo: 18,
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_main_210121034429.jpg",
+        ageRating: 18
     }
 ];
 
@@ -172,7 +230,7 @@ app.delete('/guns/:id', (req, res) => {
 // Update a gun
 app.put('/guns/:id', (req, res) => {
     const { id } = req.params;
-    const { name, type, ammo } = req.body;
+    const { name, type, ammo, maker, imageURL, ageRating } = req.body;
 
     const gun = guns.find(g => g.id === id);
     if (!gun) {
@@ -182,6 +240,9 @@ app.put('/guns/:id', (req, res) => {
     if (name) gun.name = name;
     if (type) gun.type = type;
     if (ammo !== undefined) gun.ammo = ammo;
+    if (maker) gun.maker = maker;
+    if (imageURL) gun.imageURL = imageURL;
+    if (ageRating !== undefined) gun.ageRating = ageRating;
 
     res.json({ message: '更新しました', gun });
 });
