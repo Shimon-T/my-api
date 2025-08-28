@@ -226,40 +226,45 @@ let fields = [
         name: "ASOBIBA 池袋",
         area: "東京",
         city: "東京都豊島区南池袋3丁目9-5",
+        age:"10",
         type: "インドア",
-        imageURL: "https://i.imgur.com/0xField1.jpg"
+        imageURL: ""
     },
     {
         id: uuidv4(),
         name: "ASOBIBA 新木場フィールド",
         area: "東京",
         city: "東京都江東区新木場1丁目2-17",
+        age:"",
         type: "インドア",
-        imageURL: "https://i.imgur.com/0xField1.jpg"
+        imageURL: ""
     },
     {
         id: uuidv4(),
         name: "BravePoint 台場店",
         area: "東京",
         city: "東京都港区台場1丁目6-1",
+        age:"10",
         type: "インドア",
-        imageURL: "https://i.imgur.com/0xField3.jpg"
-    }
+        imageURL: ""
+    },
     {
         id: uuidv4(),
         name: "Field OPS",
         area: "東京",
         city: "東京都稲城市坂浜734",
+        age:"18",
         type: "アウトドア",
-        imageURL: "https://i.imgur.com/0xField3.jpg"
-    }
+        imageURL: ""
+    },
     {
         id: uuidv4(),
         name: "TENKOO",
         area: "東京",
         city: "東京都八王子市高月町2205",
+        age:"18",
         type: "アウトドア",
-        imageURL: "https://i.imgur.com/0xField3.jpg"
+        imageURL: ""
     }
 ];
 
