@@ -211,9 +211,42 @@ let guns = [
     }
 ];
 
+// In-memory storage for field data
+let fields = [
+    {
+        id: uuidv4(),
+        name: "ASOBIBA 池袋店",
+        area: "東京",
+        city: "豊島区",
+        type: "インドア",
+        imageURL: "https://i.imgur.com/0xField1.jpg"
+    },
+    {
+        id: uuidv4(),
+        name: "東京サバゲパーク",
+        area: "千葉",
+        city: "印西市",
+        type: "アウトドア",
+        imageURL: "https://i.imgur.com/0xField2.jpg"
+    },
+    {
+        id: uuidv4(),
+        name: "BravePoint 台場店",
+        area: "東京",
+        city: "江東区",
+        type: "インドア",
+        imageURL: "https://i.imgur.com/0xField3.jpg"
+    }
+];
+
 // Get all guns
 app.get('/guns', (req, res) => {
     res.json(guns);
+});
+
+// Get all fields
+app.get('/fields', (req, res) => {
+    res.json(fields);
 });
 
 // Search guns by keywor
@@ -227,6 +260,23 @@ app.get('/guns/search', (req, res) => {
         gun.name.toLowerCase().includes(query) ||
         gun.type.toLowerCase().includes(query) ||
         gun.maker.toLowerCase().includes(query)
+    );
+
+    res.json(results);
+});
+
+// Search fields by keyword
+app.get('/field/search', (req, res) => {
+    const query = req.query.q?.toLowerCase();
+    if (!query) {
+        return res.status(400).json({ error: '検索キーワード (q) が必要です' });
+    }
+
+    const results = fields.filter(field =>
+        field.name.toLowerCase().includes(query) ||
+        field.area.toLowerCase().includes(query) ||
+        field.city.toLowerCase().includes(query) ||
+        field.type.toLowerCase().includes(query)
     );
 
     res.json(results);
