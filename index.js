@@ -213,28 +213,52 @@ let guns = [
 
 // In-memory storage for field data
 let fields = [
+    // {
+    //     id: uuidv4(),
+    //     name: "店舗名",
+    //     area: "東京",
+    //     city: "新宿区新宿1-2-3",
+    //     type: "インドア",
+    //     imageURL: ""
+    // },
     {
         id: uuidv4(),
-        name: "ASOBIBA 池袋店",
+        name: "ASOBIBA 池袋",
         area: "東京",
-        city: "豊島区",
+        city: "東京都豊島区南池袋3丁目9-5",
         type: "インドア",
         imageURL: "https://i.imgur.com/0xField1.jpg"
     },
     {
         id: uuidv4(),
-        name: "東京サバゲパーク",
-        area: "千葉",
-        city: "印西市",
-        type: "アウトドア",
-        imageURL: "https://i.imgur.com/0xField2.jpg"
+        name: "ASOBIBA 新木場フィールド",
+        area: "東京",
+        city: "東京都江東区新木場1丁目2-17",
+        type: "インドア",
+        imageURL: "https://i.imgur.com/0xField1.jpg"
     },
     {
         id: uuidv4(),
         name: "BravePoint 台場店",
         area: "東京",
-        city: "江東区",
+        city: "東京都港区台場1丁目6-1",
         type: "インドア",
+        imageURL: "https://i.imgur.com/0xField3.jpg"
+    }
+    {
+        id: uuidv4(),
+        name: "Field OPS",
+        area: "東京",
+        city: "東京都稲城市坂浜734",
+        type: "アウトドア",
+        imageURL: "https://i.imgur.com/0xField3.jpg"
+    }
+    {
+        id: uuidv4(),
+        name: "TENKOO",
+        area: "東京",
+        city: "東京都八王子市高月町2205",
+        type: "アウトドア",
         imageURL: "https://i.imgur.com/0xField3.jpg"
     }
 ];
