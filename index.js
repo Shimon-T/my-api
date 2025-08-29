@@ -226,6 +226,8 @@ let fields = [
         name: "ASOBIBA 池袋",
         area: "東京",
         city: "東京都豊島区南池袋3丁目9-5",
+        latitude: 35.7265,
+        longitude: 139.7148,
         age:"10",
         type: "インドア",
         imageURL: ""
@@ -235,6 +237,8 @@ let fields = [
         name: "ASOBIBA 新木場フィールド",
         area: "東京",
         city: "東京都江東区新木場1丁目2-17",
+        latitude: 35.6429,
+        longitude: 139.8299,
         age:"",
         type: "インドア",
         imageURL: ""
@@ -244,6 +248,8 @@ let fields = [
         name: "BravePoint 台場店",
         area: "東京",
         city: "東京都港区台場1丁目6-1",
+        latitude: 35.6268,
+        longitude: 139.7756,
         age:"10",
         type: "インドア",
         imageURL: ""
@@ -253,6 +259,8 @@ let fields = [
         name: "Field OPS",
         area: "東京",
         city: "東京都稲城市坂浜734",
+        latitude: 35.6261,
+        longitude: 139.4933,
         age:"18",
         type: "アウトドア",
         imageURL: ""
@@ -262,6 +270,8 @@ let fields = [
         name: "TENKOO",
         area: "東京",
         city: "東京都八王子市高月町2205",
+        latitude: 35.7009,
+        longitude: 139.3169,
         age:"18",
         type: "アウトドア",
         imageURL: ""
