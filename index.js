@@ -211,16 +211,11 @@ let guns = [
     }
 ];
 
+//ここからサバゲーフィールド
+
 // In-memory storage for field data
 let fields = [
-    // {
-    //     id: uuidv4(),
-    //     name: "店舗名",
-    //     area: "東京",
-    //     city: "新宿区新宿1-2-3",
-    //     type: "インドア",
-    //     imageURL: ""
-    // },
+    
     {
         id: uuidv4(),
         name: "ASOBIBA 池袋",
@@ -275,9 +270,138 @@ let fields = [
         age:"18",
         type: "アウトドア",
         imageURL: ""
+    },
+    {
+        id: uuidv4(),
+        name: "BravePoint 台場店",
+        area: "東京",
+        city: "新宿区新宿1-20-1",
+        latitude: 35.695856,
+        longitude: 139.701466,
+        type: "インドア",
+        imageURL: ""
+    },
+    {
+        id: uuidv4(),
+        name: "BLKFOX サバイバルゲームフィールド",
+        area: "東京",
+        city: "福生市福生768",
+        latitude: 35.7421243,
+        longitude: 139.3275329,
+        type: "インドア",
+        imageURL: ""
+    },
+    {
+        id: uuidv4(),
+        name: "ラムラム",
+        area: "東京",
+        city: "葛飾区東四つ木2-9-7",
+        latitude: 35.730058,
+        longitude: 139.845016,
+        type: "インドア",
+        imageURL: ""
+    },
+    {
+        id: uuidv4(),
+        name: "ラムラム",
+        area: "東京",
+        city: "葛飾区東四つ木2-9-7",
+        latitude: 35.730058,
+        longitude: 139.845016,
+        type: "インドア",
+        imageURL: ""
+    },
+    {
+        id: uuidv4(),
+        name: "ATTACKER",
+        area: "神奈川県",
+        city: "横浜市港北区新吉田町６０６１",
+        latitude: 35.541629,
+        longitude: 139.608059,
+        type: "インドア",
+        imageURL: ""
+    },
+    {
+        id: uuidv4(),
+        name: "IBF9",
+        area: "東京都",
+        city: "八王子市下恩方町２９３８",
+        latitude: 35.663566,
+        longitude: 139.242305,
+        type: "インドア",
+        imageURL: ""
+    },
+    {
+        id: uuidv4(),
+        name: "東京サバゲパーク",
+        area: "千葉県",
+        city: "印西市草深3筆 草深字仲ノ側258番1他",
+        latitude: 35.790691,
+        longitude: 140.150265,
+        type: "アウトドア",
+        imageURL: ""
+    },
+    {
+        id: uuidv4(),
+        name: "サバイバルカントリー",
+        area: "茨城県",
+        city: "龍ケ崎市貝原塚町",
+        latitude: 35.9005,
+        longitude: 140.1663,
+        type: "アウトドア",
+        imageURL: ""
+    },
+    {
+        id: uuidv4(),
+        name: "OPS",
+        area: "東京都",
+        city: "稲城市坂浜",
+        latitude: 35.6245,
+        longitude: 139.4942,
+        type: "アウトドア",
+        imageURL: ""
+    },
+    {
+        id: uuidv4(),
+        name: "CIMAX",
+        area: "埼玉県",
+        city: "加須市小野袋",
+        latitude: 36.1083,
+        longitude: 139.6056,
+        type: "アウトドア",
+        imageURL: ""
+    },
+    {
+        id: uuidv4(),
+        name: "Beam",
+        area: "千葉県",
+        city: "印西市船尾",
+        latitude: 35.8291,
+        longitude: 140.1692,
+        type: "アウトドア",
+        imageURL: ""
+    },
+    {
+        id: uuidv4(),
+        name: "ユニオンベース",
+        area: "千葉県",
+        city: "印西市平賀",
+        latitude: 35.8416,
+        longitude: 140.1989,
+        type: "アウトドア",
+        imageURL: ""
+    },
+    {
+        id: uuidv4(),
+        name: "ASOBIBA 池袋フィールド",
+        area: "東京都",
+        city: "豊島区南池袋",
+        latitude: 35.7265,
+        longitude: 139.7148,
+        type: "インドア",
+        imageURL: ""
     }
 ];
-
 // Get all guns
 app.get('/guns', (req, res) => {
     res.json(guns);
