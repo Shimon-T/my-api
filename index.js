@@ -11,406 +11,949 @@ app.use(express.json());
 // In-memory storage for gun data
 let guns = [
     {
-        id: uuidv4(),
-        name: "グロック17 3rdジェネレーション",
+        id: "1",
+        name: "ハイキャパ5.1",
         type: "ハンドガン",
-        ammo: 25,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121052205.jpg",
-        ageRating: 18
-    },
-    {
-        id: uuidv4(),
-        name: "ハイキャパ5.1 ガバメントモデル",
-        type: "ハンドガン",
-        ammo: 31,
-        maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121053124.jpg",
-        ageRating: 18
-    },
-    {
-        id: uuidv4(),
-        name: "ハイキャパ5.1 ゴールドマッチ",
-        type: "ハンドガン",
-        ammo: 31,
-        maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121022820.jpg",
-        ageRating: 18
-    },
-    {
-        id: uuidv4(),
-        name: "ハイキャパ5.1R ブラックモデル",
-        type: "ハンドガン",
-        ammo: 31,
-        maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121060404.jpg",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120065612.jpg",
         ageRating: 10
     },
     {
-        id: uuidv4(),
-        name: "ハイキャパ5.1 ステンレスモデル",
+        id: "1",
+        name: "ハイキャパ4.3",
         type: "ハンドガン",
-        ammo: 31,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub5_210121050230.jpg",
-        ageRating: 18
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120065833.jpg",
+        ageRating: 10
     },
     {
-        id: uuidv4(),
-        name: "M92F ミリタリーモデル",
+        id: "1",
+        name: "M9A1 ブラック",
         type: "ハンドガン",
-        ammo: 26,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210121055112.jpg",
-        ageRating: 18
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120070130.jpg",
+        ageRating: 10
     },
     {
-        id: uuidv4(),
-        name: "デザートイーグル.50AE",
+        id: "1",
+        name: "M9A1 シルバーモデル",
         type: "ハンドガン",
-        ammo: 27,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub5_210121053630.jpg",
-        ageRating: 18
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120070327.jpg",
+        ageRating: 10
     },
     {
-        id: uuidv4(),
-        name: "M4A1 カービン",
-        type: "アサルトライフル",
-        ammo: 68,
+        id: "1",
+        name: "HK P30",
+        type: "ハンドガン",
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119065711.jpg",
-        ageRating: 18
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120070528.jpg",
+        ageRating: 10
     },
     {
-        id: uuidv4(),
-        name: "HK416 デルタカスタム",
-        type: "アサルトライフル",
-        ammo: 82,
+        id: "1",
+        name: "マック11",
+        type: "ハンドガン",
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119012502.jpg",
-        ageRating: 18
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120070724.jpg",
+        ageRating: 10
     },
     {
-        id: uuidv4(),
-        name: "P90",
-        type: "サブマシンガン",
-        ammo: 68,
+        id: "1",
+        name: "スミス＆ウェッソン PC356",
+        type: "ハンドガン",
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119065200.jpg",
-        ageRating: 18
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120070940.jpg",
+        ageRating: 10
     },
     {
-        id: uuidv4(),
-        name: "MP5 SD6",
-        type: "サブマシンガン",
-        ammo: 50,
+        id: "1",
+        name: "P99 DAO",
+        type: "ハンドガン",
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119075139.jpg",
-        ageRating: 18
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120071126.jpg",
+        ageRating: 10
     },
     {
-        id: uuidv4(),
+        id: "1",
+        name: "グロック18C",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120071429.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "シグプロ SP2340",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120063618.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "コンバットデルタ　シルバーモデル",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120064015.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "KP85",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120064219.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "デザートイーグル.50AE　シルバーモデル",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120064540.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "M92Fミリタリー　シルバーモデル",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120064855.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "コンバットデルタ　ブラック",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120063825.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "デザートイーグル.50AE　ブラック",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120064406.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "センチメーターマスター",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120065031.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "M92F ミリタリー　ブラック",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120064726.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "M933 ショーティ・カスタム　タンカラー",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120055648.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "タボール21・コンパクト　フラット・ダークアース",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120060408.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "タボール21・コンパクト　ブラック",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120060121.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "スカーL CQC　フラット・ダークアース",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120060838.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "スカーL CQC　ブラック",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120060640.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "ソップモッドM4",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120061252.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "H&K G36C",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120061533.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "H&K MP5A5",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120061848.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "コルト M4A1カービン",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120062120.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "M4 CQB　タンカラーモデル",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120054434.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "AK74U",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120054801.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
         name: "G36C",
-        type: "アサルトライフル",
-        ammo: 50,
+        type: "アサルト",
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119072429.jpg",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120055026.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "MP5A5 R.A.S.",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120055301.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "M4 CQB　ブラック",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120054042.jpg",
+        ageRating: 10
+    },
+    {
+        id: "1",
+        name: "AK47R",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_250116051750.jpg",
+        ageRating: 14
+    },
+    {
+        id: "1",
+        name: "M4A1R",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_240723064813.jpg",
+        ageRating: 14
+    },
+    {
+        id: "1",
+        name: "HK45",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120051908.jpg",
         ageRating: 18
     },
     {
-        id: uuidv4(),
-        name: "ステアーAUG",
-        type: "アサルトライフル",
-        ammo: 80,
+        id: "1",
+        name: "ハイキャパE ガバメントモデル",
+        type: "ハンドガン",
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210119075819.jpg",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120052149.jpg",
         ageRating: 18
     },
     {
-        id: uuidv4(),
-        name: "M870 タクティカル",
+        id: "1",
+        name: "M93R",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120052423.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "H&K USP",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120052706.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "グロック18C",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120053013.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "M93R　シルバースライド",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120053142.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "グロック18C　シルバースライド",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120053318.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "M9A1",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120053711.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "H&K USP　シルバースライド",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120053454.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "スコーピオン モッドM",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120050011.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "MP7A1　タンカラーモデル",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120050757.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "スコーピオン Vz.61",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120051129.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "マック10",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120051412.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "MP7A1　ブラック",
+        type: "ハンドガン",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120050533.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "M4パトリオットHC",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120013900.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "H&K MP5K HC",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120014627.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "PS90 HC",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120014941.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "ステアーHC　タンカラーモデル",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120015659.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "AK47 HC",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120020033.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "ステアーHC　ブラック",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120015456.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "H&K MP5A5 HC",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120021021.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "H&K G3 SAS HC",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120021318.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "P-90プラス バージョン・レン【電動ガンプラス】",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_250318020628.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "SG553プラス【電動ガンプラス】",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_250206022949.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "G36Cプラス【電動ガンプラス】",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_240404015142.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "パトリオットプラス【電動ガンプラス】",
+        type: "小銃",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_240110052657.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "P-90プラス【電動ガンプラス】",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_230425024331.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "コルト M933コマンド",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119062324.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "M14ソーコム",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119064911.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "P-90",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119065200.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "89式5.56mm小銃",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119065450.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "コルト M4A1カービン",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119065711.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "MP5-J",
+        type: "小銃",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119071103.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "SIG552 シールズ",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119071712.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "コルト M733コマンド",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119072109.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "H&K MP5A5（ハイグレードバージョン）",
+        type: "小銃",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119072816.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "H&K MP5A4（ハイグレードバージョン）",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119073031.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "P-90 TR",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119073559.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "AK47 ヴェータ・スペツナズ",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119073854.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "H&K MP5 SD5",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119074107.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "ナイツSR-16 M4カービン",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119010926.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "H&K MP5 SD6",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119075139.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "G3ショーティ MC51",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119080656.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "H&K PSG-1",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119080936.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "H&K G3 SG/1",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119081348.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "H&K MP5クルツA4",
+        type: "小銃",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119081645.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "AK47S",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210120011707.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "SGR-12",
         type: "ショットガン",
-        ammo: 30,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_sub1_210120075151.jpg",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119052457.jpg",
         ageRating: 18
     },
     {
-        id: uuidv4(),
-        name: "サイガ-12K",
+        id: "1",
+        name: "AA-12",
         type: "ショットガン",
-        ammo: 45,
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_main_230516043332.jpg",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119062000.jpg",
         ageRating: 18
     },
     {
-        id: uuidv4(),
-        name: "VSR-10 Gスペック",
-        type: "ライフル",
-        ammo: 30,
+        id: "1",
+        name: "MP5 A4",
+        type: "アサルト",
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_main_210120043830.jpg",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_240619024928.jpg",
         ageRating: 18
     },
     {
-        id: uuidv4(),
-        name: "M40A5",
-        type: "ライフル",
-        ammo: 35,
+        id: "1",
+        name: "MP5 SD6",
+        type: "アサルト",
         maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_main_210119020828.jpg",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_221207060405.jpg",
         ageRating: 18
     },
     {
-        id: uuidv4(),
-        name: "M320A1",
+        id: "1",
+        name: "URG-I 11.5inch ブラック",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_221026025820.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "URG-I 11.5inch ソップモッド ブロック3",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_220201013737.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "AK ホワイトストーム",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_211124025630.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "MP5 A5",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210728014903.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "URG-I ソップモッド ブロック3",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210202022104.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "AKストーム",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_201120024930.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "マーク46 モッド0",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_201214082222.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "AKS47",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_201214083034.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "マーク18 モッド1",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_201214083959.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "HK416 デルタカスタム ブラック",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_201214084523.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "AK74MN",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_201214084906.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "AK47",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119011638.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "HK416 デルタカスタム",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119012502.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "HK416C カスタム",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119013102.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "HK417 アーリーバリアント",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119013710.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "DEVGRUカスタム HK416D",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119021218.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "HK416D",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119021603.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "スカーH　フラット・ダークアース",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119021959.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "スカーH　ブラック",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119022247.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "スカーL CQC　フラット・ダークアース",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119022559.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "G36Cカスタム",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119023105.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "スカーL　ブラック",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119023518.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "スカーL　フラット・ダークアース",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119023315.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "CQB-R　ブラックモデル",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119045327.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "CQB-R　フラット・ダークアース",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119045533.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "G36K",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119045940.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "AK102",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119050318.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "M4A1 カービン",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119051110.jpg",
+        ageRating: 18
+    },
+    {
+        id: "1",
+        name: "ソップモッドM4",
+        type: "アサルト",
+        maker: "東京マルイ",
+        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_old_210119051500.jpg",
+        ageRating: 18
+    },
+    {
+        id: "2",
+        name: "GBR スプリングパワー BBグレネード",
         type: "グレネード",
-        ammo: 18,
-        maker: "東京マルイ",
-        imageURL: "https://www.tokyo-marui.co.jp/appimg/product/p_main_210121034429.jpg",
-        ageRating: 18
-    }
-    ,
-    {
-        id: uuidv4(),
-        name: "M870 ブリーチャー",
-        type: "ショットガン",
-        ammo: 30,
-        maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/GaC46Eb.jpg",
+        maker: "BA GRB",
+        imageURL: "https://m.media-amazon.com/images/I/41wwgfoeruL._AC_.jpg",
         ageRating: 18
     },
     {
-        id: uuidv4(),
-        name: "VSR-10 プロスナイパーバージョン",
-        type: "ライフル",
-        ammo: 30,
-        maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/yADQztF.jpg",
-        ageRating: 18
-    },
-    {
-        id: uuidv4(),
-        name: "グレネード160ショット",
+        id: "2",
+        name: "TORNADO 2 TIMER FRAG GRENADE",
         type: "グレネード",
-        ammo: 1,
-        maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/N9geMWZ.jpg",
+        maker: "laylax",
+        imageURL: "https://m.media-amazon.com/images/I/51uQK+Z03JL._AC_SL1000_.jpg",
         ageRating: 18
     },
     {
-        id: uuidv4(),
-        name: "プロテクティブベスト",
-        type: "その他",
-        ammo: 0,
-        maker: "東京マルイ",
-        imageURL: "https://i.imgur.com/8m7RMzN.jpg",
-        ageRating: 0
+        id: "2",
+        name: "SP製 GR02",
+        type: "グレネード",
+        maker: "SP",
+        imageURL: "https://m.media-amazon.com/images/I/412so8hlHZL._AC_.jpg",
+        ageRating: 18
     }
 ];
 
-//ここからサバゲーフィールド
 
-// In-memory storage for field data
-let fields = [
-    
-    {
-        id: uuidv4(),
-        name: "ASOBIBA 池袋",
-        area: "東京",
-        city: "東京都豊島区南池袋3丁目9-5",
-        latitude: 35.7265,
-        longitude: 139.7148,
-        age:"10",
-        type: "インドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "ASOBIBA 新木場フィールド",
-        area: "東京",
-        city: "東京都江東区新木場1丁目2-17",
-        latitude: 35.6429,
-        longitude: 139.8299,
-        age:"",
-        type: "インドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "BravePoint 台場店",
-        area: "東京",
-        city: "東京都港区台場1丁目6-1",
-        latitude: 35.6268,
-        longitude: 139.7756,
-        age:"10",
-        type: "インドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "Field OPS",
-        area: "東京",
-        city: "東京都稲城市坂浜734",
-        latitude: 35.6261,
-        longitude: 139.4933,
-        age:"18",
-        type: "アウトドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "TENKOO",
-        area: "東京",
-        city: "東京都八王子市高月町2205",
-        latitude: 35.7009,
-        longitude: 139.3169,
-        age:"18",
-        type: "アウトドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "BravePoint 台場店",
-        area: "東京",
-        city: "新宿区新宿1-20-1",
-        latitude: 35.695856,
-        longitude: 139.701466,
-        type: "インドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "BLKFOX サバイバルゲームフィールド",
-        area: "東京",
-        city: "福生市福生768",
-        latitude: 35.7421243,
-        longitude: 139.3275329,
-        type: "インドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "ラムラム",
-        area: "東京",
-        city: "葛飾区東四つ木2-9-7",
-        latitude: 35.730058,
-        longitude: 139.845016,
-        type: "インドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "ラムラム",
-        area: "東京",
-        city: "葛飾区東四つ木2-9-7",
-        latitude: 35.730058,
-        longitude: 139.845016,
-        type: "インドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "ATTACKER",
-        area: "神奈川県",
-        city: "横浜市港北区新吉田町６０６１",
-        latitude: 35.541629,
-        longitude: 139.608059,
-        type: "インドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "IBF9",
-        area: "東京都",
-        city: "八王子市下恩方町２９３８",
-        latitude: 35.663566,
-        longitude: 139.242305,
-        type: "インドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "東京サバゲパーク",
-        area: "千葉県",
-        city: "印西市草深3筆 草深字仲ノ側258番1他",
-        latitude: 35.790691,
-        longitude: 140.150265,
-        type: "アウトドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "サバイバルカントリー",
-        area: "茨城県",
-        city: "龍ケ崎市貝原塚町",
-        latitude: 35.9005,
-        longitude: 140.1663,
-        type: "アウトドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "OPS",
-        area: "東京都",
-        city: "稲城市坂浜",
-        latitude: 35.6245,
-        longitude: 139.4942,
-        type: "アウトドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "CIMAX",
-        area: "埼玉県",
-        city: "加須市小野袋",
-        latitude: 36.1083,
-        longitude: 139.6056,
-        type: "アウトドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "Beam",
-        area: "千葉県",
-        city: "印西市船尾",
-        latitude: 35.8291,
-        longitude: 140.1692,
-        type: "アウトドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "ユニオンベース",
-        area: "千葉県",
-        city: "印西市平賀",
-        latitude: 35.8416,
-        longitude: 140.1989,
-        type: "アウトドア",
-        imageURL: ""
-    },
-    {
-        id: uuidv4(),
-        name: "ASOBIBA 池袋フィールド",
-        area: "東京都",
-        city: "豊島区南池袋",
-        latitude: 35.7265,
-        longitude: 139.7148,
-        type: "インドア",
-        imageURL: ""
-    }
-];
 // Get all guns
 app.get('/guns', (req, res) => {
     res.json(guns);
 });
 
-// Get all fields
-app.get('/fields', (req, res) => {
-    res.json(fields);
-});
 
 // Search guns by keywor
 app.get('/guns/search', (req, res) => {
@@ -428,22 +971,6 @@ app.get('/guns/search', (req, res) => {
     res.json(results);
 });
 
-// Search fields by keyword
-app.get('/field/search', (req, res) => {
-    const query = req.query.q?.toLowerCase();
-    if (!query) {
-        return res.status(400).json({ error: '検索キーワード (q) が必要です' });
-    }
-
-    const results = fields.filter(field =>
-        field.name.toLowerCase().includes(query) ||
-        field.area.toLowerCase().includes(query) ||
-        field.city.toLowerCase().includes(query) ||
-        field.type.toLowerCase().includes(query)
-    );
-
-    res.json(results);
-});
 
 // Add a new gun
 app.post('/guns', (req, res) => {
